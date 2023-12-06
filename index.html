@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Login_Page</title>
+        <link rel="stylesheet" href="parctice1234.css">
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+        <div class="img">
+                <img src="C:\Users\CHANDRASEKHAR\Desktop\zomato.png" alt="Loading......." id="img1">
+        </div>
+        <div class="paragra">
+
+                <p class="paragraph"><span class="para1"><span class="w">W</span>elcome to <span class="z">Zomato,</span><br></span> Please <a href="#" onclick="dis1()">Log in</a> To Enjoy Our Service<br>For any queries feel free to <a href="#">communicate with us</a></p>
+
+        </div>
+        <div class="class">
+                <div class="container">
+                        <div class="top">
+                                <h1>Login</h1>
+                                <i class="fa fa-close" onclick="dis()"></i>
+                                
+                                
+                        </div>
+                        <br><br><br>
+                        <div class="middle">
+                                <div class="disperse">
+                                        
+                                        <select name="country-names" id="country-names"> 
+                                         <option value="INDIA">INDIA</option> 
+                                         <option value="AUSTRALIA">AUS</option> 
+                                         <option value="UK">UK</option> 
+                                        <option value="USA">USA</option> 
+                                        </select>
+  
+
+                                        <input type="text"  id="num" placeholder="Enter u r mobile number"   required  pattern="[0-9]{10}" ondrop="return false;" onpaste="return false;" onkeypress='return event.charCode>=48 && event.charCode<=57' name="phone" maxlength= "10">
+                                        
+                                </div>
+                                <br>
+                               
+                                <button class="otp">Genereate One Time Password</button><br><br>
+                                <button class="button"> <pre><i class="fa fa-google" style="font-size: 25px;color: red;"></i>  Continue with Google</pre></button><br><br>
+                                <button class="button"><pre><i class="fa fa-envelope" style="font-size: 20px;color: red;"></i>   Continue in with Email</pre></button><br>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="neeche">
+                                <p class="acc">New To Zomato ? <a href="#">Click To Register</a></p>
+                        </div>
+
+                </div>
+        </div>
+
+
+
+
+
+        <script>
+                function dis(){
+                       const display = document.querySelector('.class');
+                       display.style.display='none';
+                       const para = document.querySelector('.paragraph');
+                       para.style.display='block';
+                }
+                function dis1(){
+                       const display = document.querySelector('.class');
+                       display.style.display='flex';
+                       const para = document.querySelector('.paragraph');
+                       para.style.display='none';
+                }
+        </script>
+        
+</body>
+</html>
