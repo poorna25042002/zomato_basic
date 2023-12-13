@@ -7,20 +7,21 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
+<body class="body">
+        <div class="all">
         <div class="img">
-                <img src="zomato.png" alt="Loading......." id="img1">
+                <img src="C:\Users\CHANDRASEKHAR\Desktop\zomato_basic\zomato.png" alt="Loading......." id="img1">
         </div>
         <div class="paragra">
 
-                <p class="paragraph"><span class="para1"><span class="w">W</span>elcome to <span class="z">Zomato,</span><br></span> Please <a href="#" onclick="dis1()">Log in</a> To Enjoy Our Service<br>For any queries feel free to <a href="#">communicate with us</a></p>
+                <p class="paragraph"><span class="para1"><span class="w">W</span>elcome to <span class="z">Zomato,</span><br></span> Please <a href="#" onclick="dis1()">Log in</a> To Enjoy Our Service<br>For any queries feel free to <a href="#" onclick="dis2()">communicate with us</a></p>
 
         </div>
         <div class="class">
                 <div class="container">
                         <div class="top">
                                 <h1>Login</h1>
-                                <i class="fa fa-close" onclick="dis()"></i>
+                                <i class="fa fa-close" onclick="dis()" id="close"></i>
                                 
                                 
                         </div>
@@ -53,6 +54,28 @@
 
                 </div>
         </div>
+        </div>
+        <div class="communication">
+                <div class="cross">
+                        <i class="fa fa-close"  onclick="dis3()" id="cross2"></i>
+                </div>
+                <br>
+                <br>
+                <input type="text" name="" id="txt2" placeholder="How may i help you ...."><br><br>
+                <input type="button" value="Send" id="btn2"><br><br><br><br><br><br>
+               <div class="icons">
+                <a href="#" ><i class="fa fa-instagram"  id="anchor1"></i></a>
+                <a href="#" ><i class="fa fa-facebook"  id="anchor2"></i></a>
+                <a href="#" ><i class="fa fa-twitter" id="anchor3"></i></a>
+                <a href="#" ><i class="fa fa-whatsapp"  id="anchor4"></i></a>
+
+
+
+               </div> 
+
+
+
+        </div>
 
 
 
@@ -64,12 +87,42 @@
                        display.style.display='none';
                        const para = document.querySelector('.paragraph');
                        para.style.display='block';
+                       const bod=document.querySelector('.body');
+                        bod.style.backgroundImage = 'none';
                 }
                 function dis1(){
                        const display = document.querySelector('.class');
                        display.style.display='flex';
                        const para = document.querySelector('.paragraph');
                        para.style.display='none';
+                       const bod=document.querySelector('.body');
+                        bod.style.backgroundImage = 'none';
+                }
+                function dis2(){
+                        const display=document.querySelector('.all');
+                        display.style.display='none';
+                        const com = document.querySelector('.communication');
+                        com.style.display='block';
+                        const bod=document.querySelector('.body');
+                        bod.style.backgroundImage = "url('https://wallpaperaccess.com/full/2185342.jp')";
+                        const Image1 = document.querySelector('#img1');
+                        Image1.style.display='block';
+
+                        
+                        
+
+                }
+                function dis3(){
+                        const display=document.querySelector('.all');
+                        display.style.display='flex';
+                        const com = document.querySelector('.communication');
+                        com.style.display='none';
+                        const Image1 = document.querySelector('#img1');
+                        Image1.style.display='block';
+                        const bod=document.querySelector('.body');
+                        bod.style.backgroundImage = 'none';
+
+
                 }
         </script>
         
