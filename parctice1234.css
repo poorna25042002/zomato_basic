@@ -6,8 +6,13 @@
 }
 body{
     background-color:black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   
     
 }
+
 .class{
     display: none;
     justify-content: center;
@@ -135,5 +140,104 @@ option{
     position: absolute;
     left: 110px;
     top: 30px;
+}
+.communication{
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    padding: 15px;
+    border: 3px solid white;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+    margin-left: 35%;
+    position: absolute;
+    box-shadow: 0px 0px 5px 0px white;
+}
+#txt2{
+    height: 150px;
+    width: 450px;
+    text-decoration: none;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 17px;
+    border: 1px solid grey;
+
+}
+#btn2{
+    text-decoration: none;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 17px;
+    border: 1px solid red;
+    justify-content: center;
+    margin-left: 150px;
+    height: 42px;
+    width: 168px;
+    position: absolute;
+
+}
+#btn2:hover{
+    text-decoration: none;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 17px;
+    border: 1px solid red;
+    justify-content: center;
+    margin-left: 155px;
+    height: 40px;
+    width: 160px;
+    box-shadow: 0px 0px 5px 1px red;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 55px;
+    color: red;
+
+}
+#close:hover{
+    color: red;
+}
+.communication{
+    display: none;       
+}
+.cross{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    
+    
+}
+#cross2{
+    position: absolute;
+    color: red;
+    padding: 15px;
+    top: 3px;
+}
+#cross2:hover{
+    color: white;
+    font-size: 15px;
+
+}
+#anchor1:hover{
+    color: white;
+    font-size: 58px;
+}
+#anchor2:hover{
+    color: white;
+    font-size: 58px;
+}
+#anchor3:hover{
+    color: white;
+    font-size: 58px;
+}
+#anchor4:hover{
+    color: white;
+    font-size: 58px;
 }
 
